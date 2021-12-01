@@ -6,7 +6,7 @@ def readFile(fileName):
         fileObj.close()
         return words
 
-input = readFile("2021_python/input.txt")
+input = readFile("input.txt")
 
 input = np.array(input, dtype = int)
 
@@ -25,7 +25,7 @@ def solution(start):
 tot_new = len(input) - 3
 input_bis = np.empty([tot_new, 1], dtype = int)
 
-for i in range(0, tot):
+for i in range(0, tot_new):
         t_list = input[i:i+3]
         input_bis[i] = sum(t_list)
 
